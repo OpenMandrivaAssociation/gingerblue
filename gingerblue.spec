@@ -30,6 +30,7 @@ Requires:	gstreamer1.0-plugins-bad
 Requires:	gstreamer1.0-plugins-base
 Requires:	gstreamer1.0-plugins-good
 Requires:	gtk+3
+Requires: gtk4
 Requires:	hicolor-icon-theme
 #Requires:	libchamplain >= 0.12.10
 Requires:	pango
@@ -43,6 +44,7 @@ GNOME Desktop.
 %autosetup -p1
 
 %build
+# Compile with Clang ends with error: error: non-void function 'gb_file_parse_volume' should return a value [-Wreturn-type]
 export CC=gcc
 export CXX=g++
 %configure
@@ -55,7 +57,7 @@ export CXX=g++
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS README TODO
-%attr(755,root,root) %{_bindir}/gingerblue
+%{_bindir}/gingerblue
 %{_datadir}/metainfo/gingerblue.appdata.xml
-%{_desktopdir}/gingerblue.desktop
+#gingerblue.desktop
 %{_iconsdir}/hicolor/*x*/apps/gingerblue.png
