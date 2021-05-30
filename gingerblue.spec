@@ -43,6 +43,8 @@ GNOME Desktop.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %configure
 %make_build
 
