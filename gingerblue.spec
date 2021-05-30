@@ -1,3 +1,5 @@
+%define devname		%mklibname %{name} -d
+
 Name:		gingerblue
 Version:	0.4.1
 Release:	1
@@ -40,6 +42,15 @@ Gingerblue is Free Software in development for musicians who want to
 compose, record and share original music to the Internet from the
 GNOME Desktop.
 
+%package -n	%{devname}
+Summary:	Development files for %{name}
+Group:		Development
+Requires:	%{name} = %{EVRD}
+Provides:	%{name}-devel = %{EVRD}
+
+%description -n	%{devname}
+This package contains the files needed for developing applications with %{name}.
+
 %prep
 %autosetup -p1
 
@@ -59,5 +70,8 @@ export CXX=g++
 %doc AUTHORS ChangeLog NEWS README TODO
 %{_bindir}/gingerblue
 %{_datadir}/metainfo/gingerblue.appdata.xml
-#gingerblue.desktop
+%{_datadir}/applications/gingerblue.desktop
 %{_iconsdir}/hicolor/*x*/apps/gingerblue.png
+
+%files -n %{devname}
+%{_includedir}/%{name}
