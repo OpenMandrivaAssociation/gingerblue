@@ -73,6 +73,7 @@ export CXX=g++
 %{_datadir}/metainfo/gingerblue.appdata.xml
 %{_datadir}/applications/gingerblue.desktop
 %{_iconsdir}/hicolor/*x*/apps/gingerblue.png
+%{_sysconfdir}/icecast-server.xml
 
 %files -n %{devname}
 %{_includedir}/%{name}
