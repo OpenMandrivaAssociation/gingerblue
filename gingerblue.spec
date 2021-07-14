@@ -24,6 +24,7 @@ BuildRequires:  pkgconfig(gtk4)
 BuildRequires:	pkgconfig(champlain-0.12)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(pango)
+BuildRequires:  pkgconfig(shout)
 BuildRequires:	pkgconfig
 
 Requires:	geocode-glib
