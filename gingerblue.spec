@@ -1,7 +1,7 @@
 %define devname		%mklibname %{name} -d
 
 Name:		gingerblue
-Version:	1.0.0
+Version:	1.1.0
 Release:	1
 Summary:	Free Music Software for GNOME
 License:	GPLv3
