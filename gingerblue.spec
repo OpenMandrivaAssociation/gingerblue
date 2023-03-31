@@ -2,7 +2,7 @@
 
 Name:		gingerblue
 Version:	6.1.0
-Release:	1
+Release:	2
 Summary:	Free Music Software for GNOME
 License:	GPLv3
 Group:		Sound
