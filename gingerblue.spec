@@ -1,4 +1,5 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
+%global optflags %{optflags} -Wno-incompatible-pointer-types
 
 %define devname		%mklibname %{name} -d
 
