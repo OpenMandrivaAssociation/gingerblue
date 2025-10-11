@@ -1,12 +1,12 @@
 %define devname		%mklibname %{name} -d
 
 Name:		gingerblue
-Version:	6.1.0
-Release:	3
+Version:	6.2.0
+Release:	1
 Summary:	Free Music Software for GNOME
 License:	GPLv3
 Group:		Sound
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gingerblue/0.4/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gingerblue/6.2/%{name}-%{version}.tar.xz
 URL:		https://wiki.gnome.org/Apps/Gingerblue
   
 BuildRequires:	autoconf
