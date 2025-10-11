@@ -1,3 +1,5 @@
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 %define devname		%mklibname %{name} -d
 
 Name:		gingerblue
