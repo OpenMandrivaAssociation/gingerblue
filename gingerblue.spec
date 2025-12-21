@@ -13,6 +13,8 @@ Group:		Sound
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gingerblue/6.2/%{name}-%{version}.tar.xz
 URL:		https://wiki.gnome.org/Apps/Gingerblue
   
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	intltool
