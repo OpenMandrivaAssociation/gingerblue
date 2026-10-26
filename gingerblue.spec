@@ -17,6 +17,7 @@ BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	gettext
 BuildRequires:	gettext-devel
